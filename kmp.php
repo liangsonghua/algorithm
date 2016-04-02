@@ -25,7 +25,14 @@ while($i<$str[0]){
 	if(0==$j||$str[$i]==$str[$j]){
 	  $i++;
 	  $j++;
-	  $next[$i]=$j;
+	  //改进：如果s=a a a a b c d e
+   //             t=a a a a x
+	  if($str[$i]!=$str[$j]){
+         $next[$i]=$j;
+	  }else{
+         $next[$i]=$next[$j];
+	  }
+	 
 	}
 	else{
 		//回溯
