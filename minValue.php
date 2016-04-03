@@ -25,7 +25,10 @@ function getMinValue($arr)
 	$mid   = 0;
 	while($left<$right){
 		if($left==$right-1){
-			return $arr[$right];
+	          if($arr[$left]<$arr[$right]){
+		     return $arr[$left];
+	           }
+		   return $arr[$right];
 		}
 		if($arr[$left]<$arr[$right]){
 		  return $arr[$left];
