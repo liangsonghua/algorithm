@@ -53,3 +53,20 @@
   单链表和双链表、普通和循环链表<br/>
   注意：链表为空和长度为1的情况还有对头和尾插入和删除<br/>
  **示例**：请看环形链表解决约瑟夫问题`Josephu.php`
+
+## 其他 ##
+**转圈打印**(`shunShiZhenDaYin.php`)
+
+4行4列的矩阵
+
+第一步1和16的位置标记为子矩阵<br/>
+1 &nbsp;  2 &nbsp;  3  &nbsp; 4<br/>
+5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;   8<br/>
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;     12<br/>
+13 14 15 16<br/>
+然后1的位置往右下移动，16的位置往左上移动
+标记得到子矩阵<br/>
+ 6 &nbsp; 7<br/>
+10 &nbsp; 11<br/>
+
+ 
