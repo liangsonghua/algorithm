@@ -23,7 +23,7 @@ int removeBlank(char *pString){
 
 int main()
 {
-  char str[] = "i have a dream";
+  char str[] = "i have a  dream";
   removeBlank(str);
   cout<<str<<endl;
   system("pause");
