@@ -1,4 +1,5 @@
-**Cracking the Coding Interview程序员面试金典**<br/>
+> 你可能会在leetcode或者Cracking the Coding Interview程序员面试金典或者剑指Offer见到相似的题目
+
 **1.1 确定字符互异**<br/>
 请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。<br/>
 **思路**:基于快速排序的partition，可以边排序边找重复<br/>
@@ -273,3 +274,12 @@ N个整数组成的序列a[1],a[2],a[3],…,a[n]，求该序列如a[i]+a[i+1]+�
 
 **6.5 查找和排序_最短子数组**<br/>
 对于一个数组，请设计一个高效算法计算需要排序的最短子数组的长度。<br/>
+
+**6.7 查找和排序_堆排序**<br/>
+
+**6.8 查找和排序_计数排序**<br/>
+
+**6.9 图_单词变换问题word-ladder**<br/>
+Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end,<br/>
+原题连接:[https://leetcode.com/problems/word-ladder/](https://leetcode.com/problems/word-ladder/)<br/>
+**思路:**:隐式图 广度优先搜索 不需要事先建立图本身  <br/>
