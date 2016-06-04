@@ -332,3 +332,9 @@ Given two words (start and end), and a dictionary, find the length of shortest t
 
 -2) s[i],p[i]相等时,如果p[i+1]=*,比如s=xxxxzzzz,p=x*yyyy
  	如果p[i+1]不等于*时，则i++<br/>
+
+**7.6 字符串_最短摘要生成算法**<br/>
+请设计并实现一个高效的最短摘要生成算法，该算法能找出S中包含所有T中的字符的最短子字符串，即最短摘要，如：<br/>
+S="ADOBECODEBANC"<br/>
+T="ABC"<br/>
+最短摘要结果为"BANC"<br/>
