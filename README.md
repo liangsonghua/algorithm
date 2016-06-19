@@ -1,5 +1,3 @@
-> 你可能会在leetcode或者Cracking the Coding Interview程序员面试金典或者剑指Offer见到相似的题目
-
 **1.1 确定字符互异**<br/>
 请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。<br/>
 **思路**:基于快速排序的partition，可以边排序边找重复<br/>
@@ -338,3 +336,31 @@ Given two words (start and end), and a dictionary, find the length of shortest t
 S="ADOBECODEBANC"<br/>
 T="ABC"<br/>
 最短摘要结果为"BANC"<br/>
+
+**7.7 数组_数组中出现次数超过一半的数字**<br/>
+**思路：** 同时删掉两个不同的数，众数不变。 <br/>
+于是我们随便记录一个数x，
+来一个数 y， 和x不同的话就把x ,y都扔了，=
+相当于扔掉两个不同的数，和x相同的话，就把计数器加1<br/>
+
+
+**7.8 数组_天平不平衡找假币问题**<br/>
+Sally Jones has a dozen Voyageur silver dollars. However, only eleven of the coins are true silver dollars; one coin is counterfeit even though its color and size make it indistinguishable from the real silver dollars. The counterfeit coin has a different weight from the other coins but Sally does not know if it is heavier or lighter than the real coins. <br/>
+Happily, Sally has a friend who loans her a very accurate balance scale. The friend will permit Sally three weighings to find the counterfeit coin. For instance, if Sally weighs two coins against each other and the scales balance then she knows these two coins are true. Now if Sally weighs <br/>
+one of the true coins against a third coin and the scales do not balance then Sally knows the third coin is counterfeit and she can tell whether it is light or heavy depending on whether the balance on which it is placed goes up or down, respectively. <br/>
+By choosing her weighings carefully, Sally is able to ensure that she will find the counterfeit coin with exactly three weighings.<br/>
+**思路：** 设置两个数组: real[12]-标志为真   lh[12]--标志被怀疑
+每次称球的时候，如果是"even"则把对应的设置为"真东西",即置为1，
+如果是"up"或"donw" 则把表示轻重的数组lh对应的 ++ 或者 --，直到最后。<br/>
+
+然后把所有对应real中为1（即就是真东西啦)的lh置为0；那么操作之后，
+lh中存在没有辨认出真的，就是一系列的例如： -1,-2,1,2,3等数值，那么
+假东西就是其中绝对值最大的那个！！------被怀疑次数最多，所以它为假
+
+
+**7.9 字符串_把一个数字看成字符串,判断是否为回文数**<br/>
+大家对回文串不陌生吧？一个字符串从前看和从后看如果一样的话，就是回文串。比如“上海自来水来自海上”就是一个回文串。现在我们的问题来了,把一个数字看成字符串,问它是不是一个回文数？这么简单的题目对想要成为小米工程师的你来说肯定不是问题。不过提醒一下哦：时间复杂度和空间复杂度越低的算法，得分越高。<br/>
+示例：<br/>12321 ->  true<br/>
+      3     ->  true <br/>
+      133434->  false<br/>
+**思路：**通过计算得到数字前后对应位的数字
