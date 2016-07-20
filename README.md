@@ -364,3 +364,16 @@ lh中存在没有辨认出真的，就是一系列的例如： -1,-2,1,2,3等数
       3     ->  true <br/>
       133434->  false<br/>
 **思路：**通过计算得到数字前后对应位的数字
+
+**8.0 Trapping Rain Wate**
+
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.<br/>
+
+For example, <br/>
+Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.<br/>
+![](http://i.imgur.com/SCdWrPl.png)
+[https://leetcode.com/problems/trapping-rain-water/](https://leetcode.com/problems/trapping-rain-water/)<br/>
+**思路：**<br/>
+**一般做法：**<br/>
+water[i] = (min(max(arr[0....i]),max(i+1,......n))-arr[i]);<br/>
+更好的做法： 见代码<br/>
