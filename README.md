@@ -377,3 +377,7 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.<br/>
 **一般做法：**<br/>
 water[i] = (min(max(arr[0....i]),max(i+1,......n))-arr[i]);<br/>
 更好的做法： 见代码<br/>
+
+
+欢迎大家关注我的微信公众号:**松花皮蛋的黑板报**
+![](http://www.liangsonghua.me/wp-content/uploads/2019/04/logo-3-1024x293.jpg)
